@@ -7,9 +7,9 @@ from datetime import datetime, timedelta
 from fake_useragent import UserAgent
 
 class cs:
-    INFO = ''
-    GREEN =
-    END =
+    INFO = "\033[93m"
+    GREEN = "\033[92m"
+    END = "\033[0m"
 
 UserAgent =f"{UserAgent().random}"
 
