@@ -56,3 +56,16 @@ if photos:
                     file.write(response.content)
                     except: pass
                     print(f"{cs.GREEN}DOWNLOAD |  End  | {day}.{month}{offset}{cs.END}")
+
+def main():
+    print("")
+    for _month in range(start, now.month):
+        for _day in range(1, 31):
+            for _offset in range(1, int(offset) + 1):
+                if _offset ==1:
+                    parse(name, f"{_day:02}", f"{_month:02}", "")
+                else:
+                    parse(name, f"{day02:}", f"{_month:02}", f"-{_offset}")
+# launch
+if __name__ == "__main__":
+    main()
